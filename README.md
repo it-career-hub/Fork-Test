@@ -1,7 +1,6 @@
 # Fork-Test
 
-# Fork-Test
-
+![Example Image](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNTAiIGhlaWdodD0iMTUwIiB2aWV3Qm94PSIwIDAgMTUwIDE1MCI+CiAgPHRleHQgeD0iNzUiIHk9Ijc1IiBmb250LXNpemU9IjMwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjM1ZW0iIGZpbGw9ImJsYWNrIj5PL19vPC90ZXh0Pgo8L3N2Zz4=)
 ## Overview
 
 This repository is designed to test and demonstrate the process of forking, contributing, and collaborating on projects
@@ -18,7 +17,7 @@ hosted on platforms like GitHub or similar.
 1. **Fork the Repository:** Click the "Fork" button on the repository page to create your own copy.
 2. **Clone the Fork:** Use the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/fork-test.git
+   git clone https://github.com/meni0419/fork-test.git
    ```
 3. **Create a Branch:** Follow the branching guidelines:
    ```bash
