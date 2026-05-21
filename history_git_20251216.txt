@@ -1,0 +1,58 @@
+ 2005  clear
+ 2006  ls -al
+ 2007  git clone git@github.com:AndreevVE/Fork-Test.git
+ 2008  ls -al
+ 2009  cd Fork-Test/
+ 2010  ls -al
+ 2011  clear
+ 2012  ls -al
+ 2013  git status
+ 2014  git branch -v
+ 2015  git branch -a
+ 2016  git checkout Develop 
+ 2017  git branch -v
+ 2018  git checkout -b AndreevV
+ 2019  git branch -v
+ 2020  ls -al
+ 2021  nano Song_New.txt 
+ 2022  date >> Song_New.txt 
+ 2023  git status
+ 2024  git commit -am "Add new date in Song_New.txt"
+ 2025  nano Song_New.txt 
+ 2026  git commit -am "Add 2 lines in Song_New.txt"
+ 2027  git log --oneline 
+ 2028  git push 
+ 2029  git push --set-upstream origin AndreevV
+ 2030  nano Song_New.txt 
+ 2031  git commit -am "Dell 2 lines in Song_New.txt"
+ 2032  git push 
+ 2033  nano Song_New.txt 
+ 2034  git commit -am "Add 4 lines"
+ 2035  git push 
+ 2036  git checkout Develop 
+ 2037  git pull 
+ 2038  ls -al
+ 2039  cat Song_New.txt 
+ 2040  git log --oneline 
+ 2041  git checkout AndreevV 
+ 2042  git log --oneline 
+ 2043  date > NewFile_2025-12-16.txt
+ 2044  git status
+ 2045  git add NewFile_2025-12-16.txt 
+ 2046  git commit -m "Add NewFile_2025-12-16.txt"
+ 2047  git rebase Develop 
+ 2048  git log --oneline 
+ 2049  cd ..
+ 2050  ls -al
+ 2051  rm -rf Fork-Test/
+ 2052  git clone git@github.com:AndreevVE/Fork-Test.git
+ 2053  ls -al
+ 2054  cd Fork-Test/
+ 2055  ls -al
+ 2056  git branch -a
+ 2057  git checkout Develop 
+ 2058  ls -al
+ 2059  git checkout -b AndreevV
+ 2060  history
+ 2061  history | tail -n 56
+ 2062  history | tail -n 58 >> history_git_20251216.txt
