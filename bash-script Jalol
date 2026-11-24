@@ -1,0 +1,21 @@
+
+while true
+do
+
+    read -p "Введите путь к каталогу: " source_dir
+    if [ -d "$source_dir" ]; then
+        dir_name=$(basename "$source_dir")
+        timestamp=$(date +"%Y-%m-%d_%H-%M")
+        backup_dir="$HOME/${dir_name}_backup_$timestamp"
+        cp -r "$source_dir" "$backup_dir"
+        echo "Резервная копия успешно создана: $backup_dir"
+    else
+        echo "Ошибка: каталог не существует!"
+    fi
+    read -p "Хотите скопировать еще один каталог? (y/n): " answer
+    if [ "$answer" = "n" ]; then
+        echo "Завершение программы."
+        break
+    fi
+
+done
