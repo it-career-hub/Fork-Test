@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
-#
+
 echo "Backup destination: $HOME"
 
 while true; do
-  read -p "Enter backup source directory: " SRC_PATH
+  read -p "Enter backup source directory (or \"N\" to exit the script): " SRC_PATH
+
+  if [[ "$SRC_PATH" == 'N' || "$SRC_PATH" == 'n' ]]; then
+    echo "Exit"
+    exit 0
+  fi
+
   if [ ! -d "$SRC_PATH" ]; then
     echo "Error: Directory \"$SRC_PATH\" not found."
     continue
